@@ -33,8 +33,7 @@ if __name__ == '__main__':
         EarlyStopping(
             monitor='acc',
             patience=1,
-            verbose=1,
-            mode='max'
+            verbose=1
         ),
         ModelCheckpoint(
             filepath='cnnlstm_model.h5',
@@ -91,7 +90,7 @@ if __name__ == '__main__':
     sgd = optimizers.SGD(lr=0.01, decay=1e-6, momentum=0.8, nesterov=True)
     crnn_model.model.compile(loss='categorical_crossentropy', optimizer=sgd, metrics=['accuracy'])
     # Fit the model, feeding the validation set
-    history = crnn_model.model.fit(train_inputs, train_labels, epochs=30, batch_size=64,
+    history = crnn_model.model.fit(train_inputs, train_labels, epochs=10, batch_size=32,
                                    callbacks=callback_list, validation_data=(test_inputs, test_labels),
                                    verbose=1)
 

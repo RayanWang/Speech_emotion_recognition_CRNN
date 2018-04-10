@@ -1,11 +1,13 @@
 # Speech_emotion_recognition using CNN and LSTM
+
 A deep learning application for speech emotion recognition.
 
-Language: Python 3.6
+Environment: Python 3.6
 
 # Dependencies
 
-- [keras](https://github.com/keras-team/keras) for building/training the CNN + LSTM network
+- [Tensorflow(1.6)](https://github.com/tensorflow/tensorflow/tree/r1.6) for the backend of keras
+- [keras(2.1.5)](https://github.com/keras-team/keras) for building/training the CNN + LSTM network
 - [librosa](https://github.com/RayanWang/librosa) for doing STFT
 
 # Datasets
