@@ -8,7 +8,7 @@ Environment: Python 3.6
 
 - [Tensorflow(1.6)](https://github.com/tensorflow/tensorflow/tree/r1.6) for the backend of keras
 - [keras(2.1.5)](https://github.com/keras-team/keras) for building/training the CNN + LSTM network
-- [librosa](https://github.com/RayanWang/librosa) for doing STFT
+- [librosa](https://github.com/librosa/librosa) for doing STFT
 
 # Datasets
 
